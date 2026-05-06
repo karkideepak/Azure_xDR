@@ -17,3 +17,7 @@ Filter: The where operator filters the rows to include only those where the Expo
 Summarization: The summarize operator is used to perform aggregation:
 DeviceCount = count(): Counts the number of devices for each device type.
 Grouping: The by DeviceType clause groups the results by the DeviceType column.
+
+count(): Counts the number of records.
+sum(): Calculates the sum of a numeric column.
+avg(): Computes the average value of a numeric column.
