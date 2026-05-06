@@ -1,0 +1,19 @@
+Basic syntax and structure
+KQL is designed with simplicity and power in mind, making it accessible for both beginners and experienced users. A typical KQL query starts with a data source, such as a table, followed by a series of operators that refine and manipulate the data.
+The basic building blocks include
+
+where operator for filtering rows based on conditions
+project operator for selecting specific columns
+summarize operator for aggregating data.
+
+DeviceInfo
+| where ExposureLevel == "High"
+| summarize DeviceCount = count() by DeviceType
+
+This KQL query analyzes the DeviceInfo table to identify and count devices with a high exposure level, categorized by device type. The query consists of the following steps:
+
+Data Source: The query starts with the DeviceInfo table, which contains information about various devices.
+Filter: The where operator filters the rows to include only those where the ExposureLevel is High. This targets devices that are considered to have a high level of exposure to potential threats.
+Summarization: The summarize operator is used to perform aggregation:
+DeviceCount = count(): Counts the number of devices for each device type.
+Grouping: The by DeviceType clause groups the results by the DeviceType column.
