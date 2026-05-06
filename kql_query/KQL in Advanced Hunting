@@ -1,0 +1,37 @@
+Lab 6: KQL in Advanced Hunting
+📚 Section Overview
+Learn how to use Kusto Query Language (KQL) for advanced hunting in Microsoft Defender to proactively investigate and detect threats.
+
+🎯 Learning Objectives
+Understand KQL syntax and structure.
+Use KQL to filter, sort, and aggregate data.
+Write and execute KQL queries in Defender Advanced Hunting.
+Apply KQL to real-world threat hunting scenarios.
+🛠️ Prerequisites
+Basic understanding of cybersecurity concepts and familiarity with Kusto query language.
+
+🗂️ Session Outline
+1. Introduction to KQL (10 mins)
+
+Overview of KQL and its use in Defender Advanced Hunting.
+Basic syntax and structure.
+2. Basic Querying (20 mins)
+
+Writing simple queries to retrieve data.
+Filtering with where.
+Sorting with order by.
+3. Aggregations (20 mins)
+
+Using summarize for aggregations.
+Common functions: count, sum, avg.
+Grouping with by.
+4. Advanced Techniques (20 mins)
+
+Joining tables with join.
+Creating columns with extend.
+Selecting columns with project.
+📚 Additional Resources
+KQL Documentation
+Microsoft 365 Defender Queries
+Table of Contents
+Go back to the Lab ToC
