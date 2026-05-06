@@ -1,0 +1,2 @@
+IdentityInfo
+| summarize arg_max(Timestamp, *) by AccountObjectId, OnPremSid, CloudSid
