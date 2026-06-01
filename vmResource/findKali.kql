@@ -1,0 +1,6 @@
+Resources
+| where type =~ "microsoft.compute/virtualmachines"
+| extend imagePublisher = tostring(properties.storageProfile.imageReference.publisher)
+| extend imageOffer = tostring(properties.storageProfile.imageReference.offer)
+| where imagePublisher =~ "kali-linux"
+| project name, resourceGroup, location, imagePublisher, imageOffer
