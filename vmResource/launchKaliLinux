@@ -1,0 +1,13 @@
+# Create a resource group
+az group create \
+  --name KaliRG \
+  --location eastus
+
+# Create a Kali Linux VM
+az vm create \
+  --resource-group KaliRG \
+  --name KaliVM \
+  --image kali-linux:kali:kali-2024-1:latest \
+  --size Standard_B2s \
+  --admin-username azureuser \
+  --generate-ssh-keys
